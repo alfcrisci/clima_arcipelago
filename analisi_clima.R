@@ -11,7 +11,7 @@ cat("\14")
 
 ###################################################################
 
-setwd("C:\\aaa_lavori\\lav_arcipelago")
+setwd("")
 
 ###################################################################
 sheet_names <- getSheetNames("termo_pluvio_elba.xlsx")
@@ -327,53 +327,11 @@ dev.off()
 # Monte Perone	TOS11000511	42.775	10.191	713
 # Giglio Castello	TOS03003269	42.358	10,907	470
 # Capraia Isola	TOS03003145	43.063	9.821	274
-
-
-
-
-# ggplot(dataMeteo3, mapping = aes(x = interaction(Mth, Year),
-#                                  group = 1)) +
-#   geom_col(aes(y = Rain), fill = "grey") +
-#   geom_point(aes(y = newTemp), size = 2, col = "blue") +
-#   geom_smooth(
-#     method = "gam", formula = y ~ s(x, bs = "cc"),
-#     aes(x = as.numeric(interaction(Mth, Year)), y = newTemp),
-#     col = "blue") +
-#   geom_point(aes(y = newTemp), size = 3, col = "blue", 
-#              fill = "white", shape = 21, stroke = 1) +
-#   scale_y_continuous(
-#     minor_breaks = scales::breaks_width(20),
-#     name = "Mean Monthly Total Rainfall (mm)",
-#     sec.axis = sec_axis(~ (. - 162.69) / 3.02,
-#                         name = "Mean Monthly Daily Temperature (°C)",
-#                         breaks = c(-10, 0, 10, 20, 30))) +
-#   guides(x = "axis_nested",
-#          y = guide_axis(minor.ticks=TRUE),
-#          y.sec = guide_axis(minor.ticks=TRUE)) +
-#   theme_bw(base_size = 18) +
-#   theme(
-#     panel.grid.minor = element_blank(),
-#     axis.title.x = element_blank(),
-#     axis.text.x = element_text(face = "bold", size = rel(0.5)),
-#     axis.ticks = element_line(colour = "red"),
-#     ggh4x.axis.nestline.x = element_line(linewidth = 0.6),
-#     ggh4x.axis.nesttext.x = element_text(colour = "blue", 
-#                                          face = "bold", 
-#                                          size = rel(1.2))
-#   )
-
-
-
 ##########################################################################################
-
-
-
-
-
-
 
 
 ########################################################################
 # references
 # https://www.statforbiology.com/2024/r_ggplot_dualscaledaxes/
   
+
